@@ -12,7 +12,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Carrito de Compras</title>
+    <title>CARRITO DE COMPRAS</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
