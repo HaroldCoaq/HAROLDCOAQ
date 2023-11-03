@@ -1,0 +1,678 @@
+@charset "ISO-8859-1";
+
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.ini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.a, .b {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px 0px 20px 0px;
+    margin: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 5px 8px 12px rgb(255, 255, 255); 
+}
+
+.a:hover, .b:hover {
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.a img, .b img {
+    max-width:150px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0;
+}
+
+
+/* Estilos generales para el formulario */
+.NP_BP {
+    width: 900px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para etiquetas y select */
+form {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de apilamiento a vertical */
+    align-items: center;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* Estilos para el botón */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos generales para la lista de productos */
+.LP {
+    width: 80%;
+    margin: -160px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+}
+
+/* Estilos para el título */
+.LP table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.LP table th, .LP table td {
+    border: 2px solid #000; /* Agrega borde para las celdas */
+    padding: 5px; /* Agrega espacio interno en las celdas */
+}
+
+.LP table tr:nth-child(odd) {
+    background-color: rgb(192, 192, 192); /* Color de fondo para filas impares */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Estilos para los botones en las filas */
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.MP {
+    width: 300px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.MP h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.MP form[name="formularioModificacion"] {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de apilamiento a vertical */
+    align-items: center;	
+    
+}
+
+.MP input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.MP input[type="text"][readonly] {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+.MP input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.MP input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.BP {
+    width: 600px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.BP h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.BP form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Añade espacio entre los elementos */
+}
+
+.BP form input {
+    margin-right: 10px; /* Agrega un margen a los elementos de entrada */
+}
+
+
+
+.BP input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.BP input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.BP input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.RB {
+    width: 80%;
+    margin: -160px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.RB h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.RB table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.RB table, .RB th, .RB td {
+    border: 1px solid #ccc;
+}
+
+.RB th, .RB td {
+    padding: 10px;
+    text-align: center;
+}
+
+.RB th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.RB form {
+    display: flex;
+    justify-content: center;
+}
+
+.RB input[type="hidden"],
+.RB input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.RB input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.carro {
+    width: 80%;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.carro h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.carro table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.carro table, .carro th, .carro td {
+    border: 1px solid #ccc;
+}
+
+.carro th, .carro td {
+    padding: 10px;
+    text-align: center;
+}
+
+.carro th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.carro td:nth-child(4) {
+    background-color: #f9f9f9;
+}
+
+.carro form {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.carro label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carro input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.carro input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carro input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.carro input[type="submit"], .boton-redireccion {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.carro .boton-redireccion {
+    margin-left: 10px;
+}
+
+.carro input[type="submit"]:hover, .boton-redireccion:hover {
+    background-color: #0056b3;
+}
+
+.GB {
+    width: 80%;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.GB h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.GB h2 {
+    font-size: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+.GB table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.GB table, .GB th, .GB td {
+    border: 1px solid #ccc;
+}
+
+.GB th, .GB td {
+    padding: 10px;
+    text-align: center;
+}
+
+.GB th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.GB td:nth-child(4) {
+    background-color: #f9f9f9;
+}
+
+.GB h2:last-child {
+    margin-bottom: 20px;
+}
+
+.GB h2:nth-last-child(2) {
+    margin-bottom: 10px;
+}
+
+.PROD {
+    width: 300px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.PROD h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.PROD form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.PROD input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.PROD input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.PROD input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/*CARTAS DE CATEGORIAS*/
+
+.contenedor-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 300vh;
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.carta {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.carta .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.carta .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.carta .front img {
+    position: absolute;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carta .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.carta .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.carta .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.carta .back .link a {
+    color: #f3f3f3;
+}
+
+.carta .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.carta .back p {
+    letter-spacing: 1px;
+} 
+
+.carta:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.carta:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+    
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../img/background-footer.svg");
+    mask-image: url("../img/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 250px;
+}
+
+
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
